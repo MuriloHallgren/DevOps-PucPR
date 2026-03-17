@@ -1,5 +1,7 @@
 tarefas = []
+
 #Lista de Tarefas To-Do
+
 while True:
     print("\n0 - Adicionar tarefa")
     print("1 - Lista de Tarefas")
@@ -22,5 +24,6 @@ while True:
         num = int(input("Número da tarefa: "))
         tarefas.pop(num)
 
+    # Encerrar
     elif opcao == "3":
         break
