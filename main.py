@@ -1,26 +1,30 @@
 tarefas = []
+
 #Lista de Tarefas To-Do
+
 while True:
-    print("\n1 - Adicionar tarefa")
-    print("2 - Listar tarefas")
-    print("3 - Remover tarefa")
-    print("4 - Sair")
-    opcao = input("Escolha uma opção: ")
+    print("\n0 - Adicionar tarefa")
+    print("1 - Lista de Tarefas")
+    print("2 - Excluir tarefa")
+    print("3 - Sair")
+    opcao = input("Digite o número de sua escolha: ")
 
     # Adicionar
-    if opcao == "1":
-        tarefa = input("Digite a tarefa: ")
+    if opcao == "0":
+        tarefa = input("Defina a tarefa: ")
         tarefas.append(tarefa)
 
     # Enumerar
-    elif opcao == "2":
+    elif opcao == "1":
         for i, t in enumerate(tarefas):
             print(f"{i} - {t}")
 
     # Deletar
-    elif opcao == "3":
+    elif opcao == "2":
         num = int(input("Número da tarefa: "))
         tarefas.pop(num)
 
-    elif opcao == "4":
+    # Encerrar
+    elif opcao == "3":
+        print("Operação encerrada.")
         break
