@@ -26,4 +26,5 @@ while True:
 
     # Encerrar
     elif opcao == "3":
+        print("Operação encerrada.")
         break
