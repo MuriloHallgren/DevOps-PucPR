@@ -2,14 +2,14 @@ tarefas = []
 #Lista de Tarefas To-Do
 while True:
     print("\n1 - Adicionar tarefa")
-    print("2 - Listar tarefas")
-    print("3 - Remover tarefa")
+    print("2 - Lista de Tarefas")
+    print("3 - Excluir tarefa")
     print("4 - Sair")
-    opcao = input("Escolha uma opção: ")
+    opcao = input("Digite o número de sua escolha: ")
 
     # Adicionar
     if opcao == "1":
-        tarefa = input("Digite a tarefa: ")
+        tarefa = input("Defina a tarefa: ")
         tarefas.append(tarefa)
 
     # Enumerar
