@@ -1,3 +1,5 @@
+"""Arquivo principal do projeto."""
+
 tarefas = []
 
 #Lista de Tarefas To-Do
