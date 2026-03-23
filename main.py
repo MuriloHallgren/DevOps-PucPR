@@ -1,3 +1,5 @@
+"""Arquivo principal do projeto."""
+
 tarefas = []
 
 #Lista de Tarefas To-Do
@@ -28,4 +30,3 @@ while True:
     elif opcao == "3":
         print("Operação encerrada.")
         break
-        
