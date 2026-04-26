@@ -22,15 +22,3 @@ jobs:
 
       - name: Run pylint
         run: pylint $(git ls-files '*.py')
-
-
-  discord:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Run Discord Webhook
-      uses: Sniddl/discord-commits@v1.6
-      with:
-        webhook: ${{ secrets.DISCORD_WEBHOOK }}
-        template: "avatar-with-link"
-        include-extras: true
