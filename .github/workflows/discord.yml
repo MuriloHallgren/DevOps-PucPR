@@ -1,21 +1,17 @@
 name: Discord
+
 on:
   - push
 
 jobs:
-  build:
+  discord:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v2
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: Run Discord Webhook
+        uses: Sniddl/discord-commits@v1.6
         with:
-          python-version: '3.10'
-
-      - name: Install dependencies
-        run: pip install pylint
-
-      - name: Run pylint
-        run: pylint $(git ls-files '*.py')
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          template: "avatar-with-link"
+          includes-extras: true
