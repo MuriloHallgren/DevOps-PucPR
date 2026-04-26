@@ -1,14 +1,18 @@
 """Testes unitários para o módulo main.py"""
 
 import pytest
-from __main__ import (
+import sys
+import os
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
+
+from main import (
     criar_tarefa,
     adicionar_tarefa,
     concluir_tarefa,
     excluir_tarefa,
     limpar_concluidas,
 )
-
 
 # ─────────────────────────────────────────────
 # criar_tarefa
