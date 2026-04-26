@@ -25,4 +25,4 @@ jobs:
         run: pip install pytest
 
       - name: 🧪 Executar testes unitários
-        run: pytest test_tarefas.py -v
+        run: pytest test.py -v
